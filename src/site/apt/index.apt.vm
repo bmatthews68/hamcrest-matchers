@@ -1,0 +1,70 @@
+ ------
+ Overview
+ ------
+ Brian Thomas Matthews
+ ------
+ 2013-05-21
+ ------
+
+~~ Copyright 2013 Brian Thomas Matthews
+~~
+~~ Licensed under the Apache License, Version 2.0 (the "License");
+~~ you may not use this file except in compliance with the License.
+~~ You may obtain a copy of the License at
+~~
+~~     http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing, software
+~~ distributed under the License is distributed on an "AS IS" BASIS,
+~~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~~ See the License for the specific language governing permissions and
+~~ limitations under the License.
+
+Overview
+
+  The <<Hamcrest Matchers Library>> provides additional Matcher implementations
+  that work with {{{https://code.google.com/p/hamcrest/}Hamcrest}} for use in
+  checking the results of operations being unit tested.
+
+* Pattern Matching
+
+  * <<<matches>>> - tests that the value matches a regular expression
+
+  * <<<doesNotMatch>>> - tests that a value does not match a regular expression
+
++---------------------------------------+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static com.btmatthews.hamcrest.PatternMatcher.matches;
+
+import org.junit.Test;
+
+class TestPatternMatching {
+
+  @Test
+  public void idStringIsNumeric() {
+    final Biscuit biscuit = new Biscuit("1234", "Custard Cream"));
+    assertThat("id string is numeric", biscuit.getId(), matches("\\d+"));
+  }
+}
++---------------------------------------+
+
+* Maven Central Coordinates
+
+  The <<Hamcrest Matchers Library>> has been published in
+  {{{http://search.maven.org}Maven Central}} at the following coordinates:
+
++---------------------------------------+
+<dependency>
+    <groupId>com.btmatthews.hamcrest</groupId>
+    <artifactId>hamcrest-matchers</artifactId>
+    <version>1.0.0</version>
+    <scope>test</scope>
+</dependency>
++---------------------------------------+
+
+* License & Source Code
+
+  The <<Hamcrest Matchers Library>> is made available under the
+  {{{http://www.apache.org/licenses/LICENSE-2.0.html}Apache License}}
+  and the source code is hosted on {{{http://github.com}GitHub}} at
+  {{{https://github.com/bmatthews68/hamcrest-matchers}https://github.com/bmatthews68/hamcrest-matchers}}.
