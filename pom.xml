@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <prerequisites>
         <maven>3.0.5</maven>
     </prerequisites>
     <groupId>com.btmatthews.hamcrest</groupId>
     <artifactId>hamcrest-matchers</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Hamcrest Matchers Library</name>
-    <description />
+    <description>Library of additional matchers for Hamcrest</description>
     <inceptionYear>2013</inceptionYear>
     <licenses>
         <license>
@@ -185,8 +186,7 @@
         <url>https://github.com/bmatthews68/hamcrest-matchers</url>
         <connection>scm:git:git@github.com:bmatthews68/hamcrest-matchers.git</connection>
         <developerConnection>scm:git:git@github.com:bmatthews68/hamcrest-matchers.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
     <url>https://github.com/bmatthews68/hamcrest-matchers</url>
     <organization>
         <name>Brian Matthews</name>
