@@ -21,7 +21,7 @@ class TestPatternMatching {
   @Test
   public void idStringIsNumeric() {
     final Biscuit biscuit = new Biscuit("1234", "Custard Cream"));
-    assertThat("id string is numeric", obj.getId(), matches("\\d+"));
+    assertThat("id string is numeric", biscuit.getId(), matches("\\d+"));
   }
 }
 ```
@@ -32,11 +32,12 @@ The **Hamcrest Matchers Library** has been published in
 [Maven Central](http://search.maven.org) at the following coordinates:
 
 ```xml
-<plugin>
+<dependency>
     <groupId>com.btmatthews.hamcrest</groupId>
     <artifactId>hamcrest-matchers</artifactId>
     <version>1.0.0</version>
-</plugin
+    <scope>test</scope>
+</dependency>
 ```
 
 License & Source Code
