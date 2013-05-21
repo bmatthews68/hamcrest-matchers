@@ -3,15 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Hamcrest Matchers Library - Overview</title>
+    <title>Hamcrest Matchers Library - Source Repository</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
       @import url("./css/site.css");
     </style>
     <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
-      <meta name="author" content="Brian Thomas Matthews" />
-    <meta name="Date-Creation-yyyymmdd" content="20130521" />
     <meta name="Date-Revision-yyyymmdd" content="20130521" />
     <meta http-equiv="Content-Language" content="en" />
         
@@ -63,8 +61,8 @@
                                 <h5>Overview</h5>
                   <ul>
                   <li class="none">
-            <strong>Introduction</strong>
-          </li>
+                          <a href="index.html" title="Introduction">Introduction</a>
+            </li>
           </ul>
                        <h5>Project Documentation</h5>
                   <ul>
@@ -72,8 +70,8 @@
                           <a href="project-info.html" title="Project Information">Project Information</a>
                     <ul>
                       <li class="none">
-            <strong>About</strong>
-          </li>
+                          <a href="index.html" title="About">About</a>
+            </li>
                       <li class="none">
                           <a href="plugin-management.html" title="Plugin Management">Plugin Management</a>
             </li>
@@ -84,8 +82,8 @@
                           <a href="dependency-info.html" title="Dependency Information">Dependency Information</a>
             </li>
                       <li class="none">
-                          <a href="source-repository.html" title="Source Repository">Source Repository</a>
-            </li>
+            <strong>Source Repository</strong>
+          </li>
                       <li class="none">
                           <a href="mail-lists.html" title="Mailing Lists">Mailing Lists</a>
             </li>
@@ -125,41 +123,27 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <!-- Copyright 2013 Brian Thomas Matthews --><!--  --><!-- Licensed under the Apache License, Version 2.0 (the "License"); --><!-- you may not use this file except in compliance with the License. --><!-- You may obtain a copy of the License at --><!--  --><!-- http://www.apache.org/licenses/LICENSE-2.0 --><!--  --><!-- Unless required by applicable law or agreed to in writing, software --><!-- distributed under the License is distributed on an "AS IS" BASIS, --><!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. --><!-- See the License for the specific language governing permissions and --><!-- limitations under the License. --><div class="section">
-<h2>Overview<a name="Overview"></a></h2>
-<p>The <b>Hamcrest Matchers Library</b> provides additional Matcher implementations that work with <a class="externalLink" href="https://code.google.com/p/hamcrest/">Hamcrest</a> for use in checking the results of operations being unit tested.</p>
+        <div class="section">
+<h2>Overview<a name="Overview"></a></h2><a name="Overview"></a>
+<p>This project uses <a class="externalLink" href="http://git-scm.com/">GIT</a> to manage its source code. Instructions on GIT use can be found at <a class="externalLink" href="http://git-scm.com/documentation">http://git-scm.com/documentation</a>.</p></div>
 <div class="section">
-<h3>Pattern Matching<a name="Pattern_Matching"></a></h3>
-<ul>
-<li><tt>matches</tt> - tests that the value matches a regular expression</li>
-<li><tt>doesNotMatch</tt> - tests that a value does not match a regular expression
+<h2>Web Access<a name="Web_Access"></a></h2><a name="Web_Access"></a>
+<p>The following is a link to the online source repository.</p>
 <div class="source">
-<pre>import static org.hamcrest.MatcherAssert.assertThat;
-import static com.btmatthews.hamcrest.PatternMatcher.matches;
-
-import org.junit.Test;
-
-class TestPatternMatching {
-
-  @Test
-  public void idStringIsNumeric() {
-    final Biscuit biscuit = new Biscuit(&quot;1234&quot;, &quot;Custard Cream&quot;));
-    assertThat(&quot;id string is numeric&quot;, biscuit.getId(), matches(&quot;\\d+&quot;));
-  }
-}</pre></div></li></ul></div>
+<pre><a class="externalLink" href="https://github.com/bmatthews68/hamcrest-matchers">https://github.com/bmatthews68/hamcrest-matchers</a></pre></div></div>
 <div class="section">
-<h3>Maven Central Coordinates<a name="Maven_Central_Coordinates"></a></h3>
-<p>The <b>Hamcrest Matchers Library</b> has been published in <a class="externalLink" href="http://search.maven.org">Maven Central</a> at the following coordinates:</p>
+<h2>Anonymous access<a name="Anonymous_access"></a></h2><a name="Anonymous_access"></a>
+<p>The source can be checked out anonymously from GIT with this command (See <a class="externalLink" href="http://git-scm.com/docs/git-clone">http://git-scm.com/docs/git-clone</a>):</p>
 <div class="source">
-<pre>&lt;dependency&gt;
-    &lt;groupId&gt;com.btmatthews.hamcrest&lt;/groupId&gt;
-    &lt;artifactId&gt;hamcrest-matchers&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;scope&gt;test&lt;/scope&gt;
-&lt;/dependency&gt;</pre></div></div>
+<pre>$ git clone git@github.com:bmatthews68/hamcrest-matchers.git</pre></div></div>
 <div class="section">
-<h3>License &amp; Source Code<a name="License__Source_Code"></a></h3>
-<p>The <b>Hamcrest Matchers Library</b> is made available under the <a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a> and the source code is hosted on <a class="externalLink" href="http://github.com">GitHub</a> at <a class="externalLink" href="https://github.com/bmatthews68/hamcrest-matchers">https://github.com/bmatthews68/hamcrest-matchers</a>.</p></div></div>
+<h2>Developer access<a name="Developer_access"></a></h2><a name="Developer_access"></a>
+<p>Only project developers can access the GIT tree via this method (See <a class="externalLink" href="http://git-scm.com/docs/git-clone">http://git-scm.com/docs/git-clone</a>).</p>
+<div class="source">
+<pre>$ git clone git@github.com:bmatthews68/hamcrest-matchers.git</pre></div></div>
+<div class="section">
+<h2>Access from behind a firewall<a name="Access_from_behind_a_firewall"></a></h2><a name="Access_from_behind_a_firewall"></a>
+<p>Refer to the documentation of the SCM used for more information about access behind a firewall.</p></div>
       </div>
     </div>
     <div class="clear">
