@@ -31,7 +31,7 @@
     <body>
         <links>
             <item name="Maven 3" href="http://maven.apache.org/"/>
-            <item name="Google Chrome Extensions" href="http://code.google.com/chrome/extensions/index.html"/>
+            <item name="Hamcrest" href="http://hamcrest.org"/>
         </links>
         <menu name="Overview">
             <item name="Introduction" href="index.html"/>

@@ -3,7 +3,7 @@
  ------
  Brian Thomas Matthews
  ------
- 2013-05-21
+ 2013-08-30
  ------
 
 ~~ Copyright 2013 Brian Thomas Matthews
@@ -57,7 +57,7 @@ class TestPatternMatching {
 <dependency>
     <groupId>com.btmatthews.hamcrest</groupId>
     <artifactId>hamcrest-matchers</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <scope>test</scope>
 </dependency>
 +---------------------------------------+
