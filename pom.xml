@@ -6,7 +6,7 @@
     </prerequisites>
     <groupId>com.btmatthews.hamcrest</groupId>
     <artifactId>hamcrest-matchers</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>Hamcrest Matchers Library</name>
     <description>Library of additional matchers for Hamcrest</description>
     <inceptionYear>2013</inceptionYear>
@@ -185,7 +185,7 @@
         <url>https://github.com/bmatthews68/hamcrest-matchers</url>
         <connection>scm:git:git@github.com:bmatthews68/hamcrest-matchers.git</connection>
         <developerConnection>scm:git:git@github.com:bmatthews68/hamcrest-matchers.git</developerConnection>
-      <tag>hamcrest-matchers-1.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
     <url>https://github.com/bmatthews68/hamcrest-matchers</url>
     <organization>
